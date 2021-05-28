@@ -33,11 +33,11 @@ int main() {
 
     //read string
     std::string input;
-    std::cout << "Eingabe: ";
+    std::cout << "Input: ";
     std::cin >> input;
     
     if (input.size() > 100) {
-        std::cout << "Netter versuch :)" << std::endl;
+        std::cout << "Nice try though" << std::endl;
         return 0;
     }
 
@@ -55,7 +55,7 @@ int main() {
     }
 
     if (cheat) {
-        std::cout << "Resultat: Unsinn" << std::endl;
+        std::cout << "Result: Garbage" << std::endl;
         return 0;
     }
 
@@ -68,7 +68,7 @@ int main() {
         int index = pc - alphabet.c_str();
         
         if (index < 0 || index > alphabet.size()) {
-            std::cout << "Buchstabe is nix im alphabet" << std::endl;
+            std::cout << "No, this letter is no valid" << std::endl;
             return 0;
         }
 
@@ -77,7 +77,7 @@ int main() {
         out += new_char;
     }
 
-    std::cout << "Resultat: " << out << std::endl;
+    std::cout << "Result: " << out << std::endl;
 
     return 0;
 }
